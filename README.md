@@ -7,20 +7,19 @@ Introduction
 ------------
 
 This repository consists of interfaces used by Apigility that can be composed
-into standalone modules and libraries so that consumers may choose to opt in to
+into standalone modules and libraries so that consumers may choose to opt-in to
 Apigility functionality.
 
 ### General Usage
 
-To mark a module as being an Apigility enabled module, add this interface to your
-Module, like:
+To mark a module as being an Apigility-enabled module, add the following
+interface to your Module:
 
 ```php
 use ZF\Apigility\Provider\ApigilityProviderInterface;
 
 class MyModule implements ApigilityProviderInterface
 {
-
 }
 ```
 
