@@ -25,6 +25,11 @@ class MyModule implements ApigilityProviderInterface
 
 At this point, this particular module should show up in the Apigility UI interface.
 
+Requirements
+------------
+  
+Please see the [composer.json](composer.json) file.
+
 Installation
 ------------
 
