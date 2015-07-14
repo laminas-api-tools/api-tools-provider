@@ -29,15 +29,19 @@
         "php": ">=5.3.23"
     },
     "require-dev": {
-        "fabpot/php-cs-fixer": "*@dev"
+        "squizlabs/php_codesniffer": "^2.3"
     },
     "autoload": {
         "psr-4": {
-            "ZF\\Apigility\\Provider\\": "src/",
-            "ZFTest\\Apigility\\Provider\\": "test/"
+            "ZF\\Apigility\\Provider\\": "src/"
         },
         "classmap": [
             "Module.php"
         ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ZFTest\\Apigility\\Provider\\": "test/"
+        }
     }
 }
