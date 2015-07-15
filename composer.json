@@ -26,10 +26,10 @@
         }
     },
     "require": {
-        "php": ">=5.3.23"
+        "php": ">=5.5"
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "^2.3"
+        "squizlabs/php_codesniffer": "^2.3.1"
     },
     "autoload": {
         "psr-4": {
