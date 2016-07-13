@@ -16,9 +16,6 @@
         "source": "https://github.com/zfcampus/zf-apigility",
         "issues": "https://github.com/zfcampus/zf-apigility/issues"
     },
-    "repositories": [
-        { "type": "composer", "url": "https://packages.zendframework.com/" }
-    ],
     "extra": {
         "branch-alias": {
             "dev-master": "1.1-dev",
@@ -26,7 +23,7 @@
         }
     },
     "require": {
-        "php": ">=5.5"
+        "php": "^5.5 || ^7.0"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^2.3.1"
@@ -34,14 +31,10 @@
     "autoload": {
         "psr-4": {
             "ZF\\Apigility\\Provider\\": "src/"
-        },
-        "classmap": [
-            "Module.php"
-        ]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "ZFTest\\Apigility\\Provider\\": "test/"
         }
+    },
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf"
     }
 }
