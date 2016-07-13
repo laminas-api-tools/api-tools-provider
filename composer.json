@@ -32,5 +32,9 @@
         "psr-4": {
             "ZF\\Apigility\\Provider\\": "src/"
         }
+    },
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf"
     }
 }
