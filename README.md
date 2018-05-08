@@ -1,7 +1,7 @@
 ZF Apigility Provider
 =====================
 
-[![Build Status](https://travis-ci.org/zfcampus/zf-apigility-provider.png)](https://travis-ci.org/zfcampus/zf-apigility-provider)
+[![Build Status](https://secure.travis-ci.org/zfcampus/zf-apigility-provider.svg?branch=master)](https://secure.travis-ci.org/zfcampus/zf-apigility-provider)
 
 Introduction
 ------------
