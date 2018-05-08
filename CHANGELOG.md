@@ -2,9 +2,13 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
-## 1.3.0 - TBD
+## 1.3.0 - 2018-05-08
 
 ### Added
+
+- [#11](https://github.com/zfcampus/zf-apigility-provider/pull/11) adds support for PHP 7.1 and 7.2.
+
+### Changed
 
 - Nothing.
 
@@ -14,25 +18,9 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Removed
 
-- Nothing.
+- [#11](https://github.com/zfcampus/zf-apigility-provider/pull/11) removes support for PHP 5.5.
 
-### Fixed
-
-- Nothing.
-
-## 1.2.1 - TBD
-
-### Added
-
-- Nothing.
-
-### Deprecated
-
-- Nothing.
-
-### Removed
-
-- Nothing.
+- [#11](https://github.com/zfcampus/zf-apigility-provider/pull/11) removes support for HHVM.
 
 ### Fixed
 
