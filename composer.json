@@ -1,31 +1,21 @@
 {
-    "name": "zfcampus/zf-apigility-provider",
-    "description": "Apigility interfaces",
+    "name": "laminas-api-tools/api-tools-provider",
+    "description": "Laminas API Tools interfaces",
     "license": "BSD-3-Clause",
     "keywords": [
-        "zf",
-        "zendframework",
+        "laminas",
+        "api-tools",
         "api",
-        "apigility",
         "framework"
     ],
+    "homepage": "https://api-tools.getlaminas.org",
     "support": {
-        "issues": "https://github.com/zfcampus/zf-apigility-provider/issues",
-        "source": "https://github.com/zfcampus/zf-apigility-provider",
-        "rss": "https://github.com/zfcampus/zf-apigility-provider/releases.atom",
-        "chat": "https://zendframework-slack.herokuapp.com",
-        "forum": "https://discourse.zendframework.com/c/questions/apigility"
-    },
-    "require": {
-        "php": "^5.6 || ^7.0"
-    },
-    "require-dev": {
-        "zendframework/zend-coding-standard": "~1.0.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "ZF\\Apigility\\Provider\\": "src/"
-        }
+        "docs": "https://api-tools.getlaminas.org/documentation",
+        "issues": "https://github.com/laminas-api-tools/api-tools-provider/issues",
+        "source": "https://github.com/laminas-api-tools/api-tools-provider",
+        "rss": "https://github.com/laminas-api-tools/api-tools-provider/releases.atom",
+        "chat": "https://laminas.dev/chat",
+        "forum": "https://discourse.laminas.dev"
     },
     "config": {
         "sort-packages": true
@@ -36,11 +26,26 @@
             "dev-develop": "1.4.x-dev"
         }
     },
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "laminas/laminas-zendframework-bridge": "^1.0"
+    },
+    "require-dev": {
+        "laminas/laminas-coding-standard": "~1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laminas\\ApiTools\\Provider\\": "src/"
+        }
+    },
     "scripts": {
         "check": [
             "@cs-check"
         ],
         "cs-check": "phpcs",
         "cs-fix": "phpcbf"
+    },
+    "replace": {
+        "zfcampus/zf-apigility-provider": "self.version"
     }
 }
