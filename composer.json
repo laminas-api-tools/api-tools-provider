@@ -1,24 +1,25 @@
 {
-    "name": "zfcampus/zf-apigility-provider",
-    "description": "Apigility interfaces",
-    "type": "library",
+    "name": "laminas-api-tools/api-tools-provider",
+    "description": "Laminas API Tools interfaces",
     "license": "BSD-3-Clause",
     "keywords": [
+        "laminas",
+        "api-tools",
         "api",
-        "apigility",
-        "framework",
-        "zf2"
+        "framework"
     ],
-    "homepage": "http://apigility.org/",
+    "homepage": "https://api-tools.getlaminas.org",
     "support": {
-        "email": "apigility-users@zend.com",
-        "irc": "irc://irc.freenode.net/apigility",
-        "source": "https://github.com/zfcampus/zf-apigility",
-        "issues": "https://github.com/zfcampus/zf-apigility/issues"
+        "docs": "https://api-tools.getlaminas.org/documentation",
+        "issues": "https://github.com/laminas-api-tools/api-tools-provider/issues",
+        "source": "https://github.com/laminas-api-tools/api-tools-provider",
+        "rss": "https://github.com/laminas-api-tools/api-tools-provider/releases.atom",
+        "chat": "https://laminas.dev/chat",
+        "forum": "https://discourse.laminas.dev"
     },
-    "repositories": [
-        { "type": "composer", "url": "https://packages.zendframework.com/" }
-    ],
+    "config": {
+        "sort-packages": true
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev",
@@ -26,14 +27,15 @@
         }
     },
     "require": {
-        "php": ">=5.3.23"
+        "php": ">=5.3.23",
+        "laminas/laminas-zendframework-bridge": "^1.0"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^2.3"
     },
     "autoload": {
         "psr-4": {
-            "ZF\\Apigility\\Provider\\": "src/"
+            "Laminas\\ApiTools\\Provider\\": "src/"
         },
         "classmap": [
             "Module.php"
@@ -41,7 +43,10 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "ZFTest\\Apigility\\Provider\\": "test/"
+            "LaminasTest\\ApiTools\\Provider\\": "test/"
         }
+    },
+    "replace": {
+        "zfcampus/zf-apigility-provider": "self.version"
     }
 }
