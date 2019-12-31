@@ -6,4 +6,8 @@
  * @license   https://github.com/laminas-api-tools/api-tools-provider/blob/master/LICENSE.md New BSD License
  */
 
-return array();
+namespace Laminas\ApiTools\Provider;
+
+interface ApiToolsProviderInterface
+{
+}

@@ -1,29 +1,29 @@
-ZF Apigility Provider
+Laminas API Tools Provider
 =====================
 
-[![Build Status](https://travis-ci.org/zfcampus/zf-apigility-provider.png)](https://travis-ci.org/zfcampus/zf-apigility-provider)
+[![Build Status](https://travis-ci.org/laminas-api-tools/api-tools-provider.png)](https://travis-ci.org/laminas-api-tools/api-tools-provider)
 
 Introduction
 ------------
 
-This repository consists of interfaces used by Apigility that can be composed
+This repository consists of interfaces used by Laminas API Tools that can be composed
 into standalone modules and libraries so that consumers may choose to opt-in to
-Apigility functionality.
+Laminas API Tools functionality.
 
 ### General Usage
 
-To mark a module as being an Apigility-enabled module, add the following
+To mark a module as being an Laminas API Tools-enabled module, add the following
 interface to your Module:
 
 ```php
-use ZF\Apigility\Provider\ApigilityProviderInterface;
+use Laminas\ApiTools\Provider\ApiToolsProviderInterface;
 
-class MyModule implements ApigilityProviderInterface
+class MyModule implements ApiToolsProviderInterface
 {
 }
 ```
 
-At this point, this particular module should show up in the Apigility UI interface.
+At this point, this particular module should show up in the Laminas API Tools UI interface.
 
 Installation
 ------------
@@ -31,14 +31,14 @@ Installation
 Run the following `composer` command:
 
 ```console
-$ composer require "zfcampus/zf-apigility-provider:~1.0-dev"
+$ composer require "laminas-api-tools/api-tools-provider:~1.0-dev"
 ```
 
 Alternately, manually add the following to your `composer.json`, in the `require` section:
 
 ```javascript
 "require": {
-    "zfcampus/zf-apigility-provider": "~1.0-dev"
+    "laminas-api-tools/api-tools-provider": "~1.0-dev"
 }
 ```
 
@@ -52,7 +52,7 @@ return array(
     /* ... */
     'modules' => array(
         /* ... */
-        'ZF\Apigility\Provider',
+        'Laminas\ApiTools\Provider',
     ),
     /* ... */
 );
