@@ -1,7 +1,7 @@
 Laminas API Tools Provider
 =====================
 
-[![Build Status](https://travis-ci.org/laminas-api-tools/api-tools-provider.svg?branch=master)](https://travis-ci.org/laminas-api-tools/api-tools-provider)
+[![Build Status](https://travis-ci.com/laminas-api-tools/api-tools-provider.svg?branch=master)](https://travis-ci.com/laminas-api-tools/api-tools-provider)
 
 Introduction
 ------------
