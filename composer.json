@@ -27,7 +27,8 @@
         "laminas/laminas-zendframework-bridge": "^1.0"
     },
     "require-dev": {
-        "laminas/laminas-coding-standard": "~2.3.0"
+        "laminas/laminas-coding-standard": "~2.3.0",
+        "vimeo/psalm": "^4.7"
     },
     "autoload": {
         "psr-4": {
@@ -39,7 +40,8 @@
             "@cs-check"
         ],
         "cs-check": "phpcs",
-        "cs-fix": "phpcbf"
+        "cs-fix": "phpcbf",
+        "static-analysis": "psalm --shepherd --stats"
     },
     "replace": {
         "zfcampus/zf-apigility-provider": "^1.3.0"
