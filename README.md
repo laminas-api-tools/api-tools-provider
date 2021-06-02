@@ -1,7 +1,7 @@
 Laminas API Tools Provider
 =====================
 
-[![Build Status](https://travis-ci.com/laminas-api-tools/api-tools-provider.svg?branch=master)](https://travis-ci.com/laminas-api-tools/api-tools-provider)
+[![Build Status](https://github.com/laminas-api-tools/api-tools-provider/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/laminas-api-tools/api-tools-provider/actions/workflows/continuous-integration.yml)
 
 Introduction
 ------------
